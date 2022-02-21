@@ -1161,14 +1161,14 @@ textarea::placeholder {
   fill: #2196f3;
 }
 
-.rr:hover::before .icon-modalmail,
-.rr:focus::before .icon-modalmail {
+.rr:hover .icon-modalmail,
+.rr:focus .icon-modalmail {
   color: #2196f3;
   fill: #2196f3;
 }
 
-.rr:hover::after .icon-modalmail .modal-form-input,
-.rr:focus::after .icon-modalmail .modal-form-input {
+.rr:hover .icon-modalmail .modal-form-input,
+.rr:focus .icon-modalmail .modal-form-input {
   color: #2196f3;
   fill: #2196f3;
 }
