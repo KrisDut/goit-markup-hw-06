@@ -609,7 +609,6 @@ ul {
   display: flex;
   height: 252px;
   background: #2f303a;
-  margin-left: -70px;
 }
 
 .container {
@@ -624,6 +623,7 @@ ul {
   display: flex;
   flex-direction: row;
   padding: 0px;
+  margin: 0;
 }
 
 .footer-list-1 {
@@ -635,6 +635,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  margin-left: -40px;
 }
 
 .webstudio-footer {
@@ -667,7 +668,7 @@ ul {
   color: #ffffff;
 }
 
-.mail-tel-footer {
+.mail-footer {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -676,7 +677,20 @@ ul {
   /* or 171% */
   margin-top: 9px;
   letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.6);
+}
 
+.tel-footer {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 171%;
+  /* or 171% */
+  margin-top: 9px;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -684,7 +698,7 @@ ul {
   display: flex;
   width: 206px;
   padding-top: 75px;
-  padding-left: 72px;
+  padding-left: 68px;
   padding-bottom: 10px;
 }
 
@@ -734,6 +748,79 @@ ul {
   fill: #ffffff;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.newsletter {
+  display: flex;
+  padding-top: 72px;
+  padding-left: 77px;
+}
+
+.footer-zapisz {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-label {
+  display: flex;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.all-labels:hover {
+  border: 1px solid #2196f3;
+}
+
+.footer-submit {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-submit-text {
+  display: flex;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 187%;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  margin-right: 24px;
+}
+
+.footer-plane {
+  display: flex;
+  width: 24px;
+  height: 24px;
 }
 
 .button-items {
