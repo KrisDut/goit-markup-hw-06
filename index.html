@@ -33,7 +33,7 @@
 
           <li>
             <a href="mailto:info@devstudio.com" class="mail-nav">
-              <svg class="icon-mail-nav" fill="currentColor" width="16px" height="12px">
+              <svg class="icon-mail" fill="currentColor">
                 <use href="./images/icons.svg#icon-mail"></use> 
               </svg>info@devstudio.com</a>
           </li>
@@ -572,9 +572,7 @@
                   </label>
 
                   <button type="submit" class="footer-submit">
-                    <div class="footer-submit-text">Zapisz się
-                      
-                    </div>
+                    <div class="footer-submit-text">Zapisz się</div>
                     <div> 
                       <svg
                         class="footer-plane"
@@ -595,6 +593,61 @@
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <button type="button" class="close-btn" data-modal-close><div class="x">×</div></button>
+    <div class="modal-title">Zostaw swoje dane w formularzu poniżej</div>
+  <div class="modal-container">
+    <form class="modal-form">
+      <label for="modal-user" class="modal-form-label">
+        <span class="modal-label-text">Imie</span>
+        <div class="rr">
+          <svg class="icon-head"
+             fill="#212121">
+        <use href="./images/icons.svg#icon-head"></use>
+        </svg>
+        <input type="text" class="modal-form-input all-labels" name="username" id="modal-user">
+        </div>
+      </label>
+
+      <label for="modal-phone" class="modal-form-label">
+        <span class="modal-label-text">Telefon</span>
+        <div class="rr">
+        <svg class="icon-modalphone"
+             fill="#212121">
+        <use href="./images/icons.svg#icon-modalphone"></use>
+        </svg>
+        <input type="tel" class="modal-form-input all-labels" name="phone_number" id="modal-phone"/>
+      </div>
+      </label>
+
+      <label for="modal-mail" class="modal-form-label">
+        <span class="modal-label-text">Email</span>
+        <div class="rr">
+          <svg class="icon-modalmail"
+             fill="#212121">
+        <use href="./images/icons.svg#icon-modalmail"></use>
+        </svg>
+        <input type="email" class="modal-form-input all-labels" name="mail" id="modal-mail">
+        </div>
+      </label>
+
+      <label for="modal-feedback" class="modal-form-label">
+        <span class="modal-label-text">Komentarz</span>
+        <textarea name="feedback" class="modal-form-feedback all-labels" placeholder="Wprowadź tekst" id="modal-feedback"></textarea>
+      </label>
+
+        <label for="check" class="check-container">
+        <input type="checkbox" id="check" name="regulamin" class="modal-check" />
+          <span class="modal-check-text">
+            Oświadczam iż akceptuję <a href="#" class="reg">Regulamin</a> i <a href="#" class="reg">Politykę Prywatności.</a>
+          </span>
+      </label>
+
+       <div class="modal-btn"> 
+         <button type="submit" class="modal-submit">
+          <span class="modal-submit-text">Wyślij</span>
+        </button>
+      </div>
+    </form>
+  </div>
   </div>
 </div>
 
