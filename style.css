@@ -728,6 +728,7 @@ ul {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   margin-right: 12px;
+  color: #ffffff;
 }
 
 .all-labels:hover {
@@ -1098,6 +1099,7 @@ textarea::placeholder {
   display: flex;
   background: #212121;
   margin-right: 8px;
+  border-style: solid;
 }
 
 .reg {
@@ -1105,11 +1107,25 @@ textarea::placeholder {
   color: #2196f3;
 }
 
-.icon-head,
-.icon-modalphone,
-.icon-modalmail {
+.icon-head {
   position: absolute;
   width: 12px;
+  height: 12px;
+  margin: 14px 15px;
+  z-index: 999;
+}
+
+.icon-modalphone {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  margin: 14px 15px;
+  z-index: 999;
+}
+
+.icon-modalmail {
+  position: absolute;
+  width: 15px;
   height: 12px;
   margin: 14px 15px;
   z-index: 999;
@@ -1145,14 +1161,14 @@ textarea::placeholder {
   fill: #2196f3;
 }
 
-.rr:hover .icon-modalmail,
-.rr:focus .icon-modalmail {
+.rr:hover::before .icon-modalmail,
+.rr:focus::before .icon-modalmail {
   color: #2196f3;
   fill: #2196f3;
 }
 
-.rr:hover .icon-modalmail .modal-form-input,
-.rr:focus .icon-modalmail .modal-form-input {
+.rr:hover::after .icon-modalmail .modal-form-input,
+.rr:focus::after .icon-modalmail .modal-form-input {
   color: #2196f3;
   fill: #2196f3;
 }
