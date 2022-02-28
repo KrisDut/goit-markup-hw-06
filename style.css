@@ -936,9 +936,13 @@ a {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  animation: animateModal 1000ms 1000ms;
+
   transform-origin: center center;
   transform: translate(-50%, -50%);
+}
+
+.animated-modal {
+  animation: animateModal 1000ms;
 }
 
 @keyframes animateModal {
@@ -1065,22 +1069,8 @@ textarea::placeholder {
   color: #ffffff;
 }
 
-.modal-container {
-  display: flex;
-  justify-content: center;
-}
-
 .modal-btn {
   display: flex;
-}
-
-.check-container {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
 }
 
 .modal-check-text {
@@ -1095,11 +1085,41 @@ textarea::placeholder {
   margin-top: 2px;
 }
 
-.modal-check {
+.check-container {
   display: flex;
-  background: #212121;
-  margin-right: 8px;
-  border-style: solid;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px 30px 0px;
+}
+
+.check-bird::before {
+  display: inline-block;
+  content: "";
+  width: 13px;
+  height: 13px;
+  outline: 1px solid #000;
+  border-radius: 2px;
+  transition: all 250ms;
+  background-position: 50% 50%;
+  margin-right: 7px;
+}
+
+.modal-form-policy:checked + .check-bird::before {
+  background-color: #2196f3;
+  background-image: url(../images/checkbox-ptaszek.svg);
+  background-repeat: no-repeat;
+  outline: 1px solid #2196f3;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden;
 }
 
 .reg {
@@ -1170,5 +1190,17 @@ textarea::placeholder {
 .rr:hover .icon-modalmail .modal-form-input,
 .rr:focus .icon-modalmail .modal-form-input {
   color: #2196f3;
+  fill: #2196f3;
+}
+
+input:focus-within,
+textarea:focus-within {
+  outline: none;
+  border: 1px solid #2196f3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+input:focus-within + .icon-head:hover {
   fill: #2196f3;
 }
